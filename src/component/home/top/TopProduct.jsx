@@ -24,21 +24,21 @@ const TopProduct = () => {
 
   return (
     <>
-      <section className="lg:mt-20">
+      <section className="mt-20">
         <div className="">
-          <div className="flex lg:mx-20">
-            <div className="w-1/2">
+          <div className="lg:flex lg:mx-20 text-center">
+            <div className="lg:w-1/2 lg:text-left text-center lg:mx-0 mx-[20px] text-sm lg:text-normal">
               <Heading
                 title="Top Selling Products"
                 desc="Meet our newbies! The latest templates uploaded to the marketplace."
               />
             </div>
 
-            <div className="flex justify-between w-1/2 top-0 mt-3 mb-3">
+            <div className="lg:flex lg:justify-between flex justify-center flex-wrap lg:w-1/2 w-full grid-cols-2 top-0 mt-7 mb-3">
               {category.map((category) => (
                 <button
                   className="bg-gradient-to-tr from-red-600 to-orange-400 hover:bg-gradient-to-tr hover:from-red-600 shadow-sm hover:shadow-none shadow-slate-600
-                   hover:to-orange-500  px-5 rounded-2xl text-slate-200"
+                   hover:to-orange-500 lg:px-5 px-3 mx-1 mb-3 rounded-2xl py-1 lg:text-base text-xs text-slate-200"
                   onClick={() => handleFilter(category)}
                 >
                   {category}

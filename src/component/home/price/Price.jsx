@@ -5,7 +5,7 @@ import Heading from "../../common/Heading";
 const Price = () => {
   return (
     <>
-      <section className="bg-[#0a2b52] text-white py-16">
+      <section className="bg-[#0a2b52] text-white py-16 lg:mt-28 mt-20">
         <div className="flex justify-center text-center leading-8 tracking-wider">
           <Heading
             title="Choose The Plans"
@@ -13,10 +13,10 @@ const Price = () => {
           />
         </div>
 
-        <div className="grid grid-cols-3 gap-7 max-w-[80%] m-auto mt-5">
+        <div className="lg:grid lg:grid-cols-3 gap-7 max-w-[80%] m-auto mt-5">
           {price.map((item) => (
             <div
-              className="p-10 rounded-xl bg-[#0a2b52] hover:bg-[#0a2b59] relative overflow-hidden even:before:content-[attr(before)] before:bg-[#bd3f99] before:px-10 before:top-4 before:absolute before:left-[210px] before:mt-1 before:font-medium before:uppercase before:transform before:rotate-[35deg]"
+              className="p-10 mb-5 lg:mb-0 rounded-xl bg-[#0a2b52] hover:bg-[#0a2b59] relative overflow-hidden even:before:content-[attr(before)] before:bg-[#bd3f99] before:px-10 before:top-4 before:absolute before:left-[170px] lg:before:left-[210px] before:mt-1 before:font-medium before:uppercase before:transform before:rotate-[35deg]"
               key={item.id}
               before="Popular"
             >

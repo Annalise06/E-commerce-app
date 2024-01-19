@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import Header from "../../common/Header";
 import Footer from "../../common/Footer";
 import ExampleComponent from "../Product/Modal";
+import { Details } from "../details/Details";
 
 const Pages = () => {
   return (
@@ -16,7 +17,7 @@ const Pages = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/modal" element={<ExampleComponent />} />
+        <Route exact path='/cart/:id' element={<Details />} />
       </Routes>
       <Footer />
     </div>

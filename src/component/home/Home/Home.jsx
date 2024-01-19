@@ -5,6 +5,8 @@ import Hero from './Hero';
 import Banner from '../banner/Banner';
 import TopProduct from '../top/TopProduct';
 import Price from '../price/Price';
+import Testimonial from '../testimonial/Testimonial';
+import Blog from '../blog/Blog';
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
       <Banner />
       <TopProduct />
       <Price />
+      <Testimonial />
+      <Blog />
     </div>
   )
 }
